@@ -32,33 +32,37 @@ public class Juego
             if((opcion_JUGADOR1.equals("piedra"))&&(opcion_JUGADOR2.equals("papel")))
             {
                 System.out.println("Jugador 2 GANA");
-                p2.setExitos();
+                EXITOS_jugador2++;
                 
             }
             else if((opcion_JUGADOR1.equals("papel"))&&(opcion_JUGADOR2.equals("piedra")))
             {
-            	p1.setExitos();
+
                 System.out.println("Jugador 1 GANA");
+                EXITOS_jugador1++;
             }
             else if((opcion_JUGADOR1.equals("piedra"))&&(opcion_JUGADOR2.equals("tijeras")))
             {
-                p1.setExitos();
+
                 System.out.println("Jugador 1 GANA");
+                EXITOS_jugador1++;
             }
             else if((opcion_JUGADOR1.equals("tijeras"))&&(opcion_JUGADOR2.equals("piedra")))
             {
-                p2.setExitos();
+                EXITOS_jugador2++;
                 System.out.println("Jugador 2 GANA");
             }
             else if((opcion_JUGADOR1.equals("tijeras"))&&(opcion_JUGADOR2.equals("papel")))
             {
-                p1.setExitos();
+
                 System.out.println("Jugador 1 GANA");
+                EXITOS_jugador1++;
             }
             else if((opcion_JUGADOR1.equals("papel"))&&(opcion_JUGADOR2.equals("tijeras")))
             {
-                p2.setExitos();
+
                 System.out.println("Jugador 2 GANA");
+                EXITOS_jugador2++;
             }
             if(opcion_JUGADOR1.equals(opcion_JUGADOR2))
             {
@@ -66,7 +70,7 @@ public class Juego
                 System.out.println("\n\t\t\t Empate \n");
             }
             Rondasjugadas++;
-            if((p1.getExitos()>=3)||(p2.getExitos()>=3))
+            if((EXITOS_jugador1>=3)||(EXITOS_jugador2>=3))
             {
             	fin_de_juego=true;
                 System.out.println("FIN DEL JUEGO!!");
