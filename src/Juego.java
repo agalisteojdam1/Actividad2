@@ -18,7 +18,8 @@ public class Juego
         int EmPaTeS = 0;
         int exitos;      // número de partidas ganadas
         int winTotal;
-        String opcion_JUGADOR1, opcion_JUGADOR2;
+        String opcion_JUGADOR1;
+        String opcion_JUGADOR2;
         
         // Bucle de juego
         do
