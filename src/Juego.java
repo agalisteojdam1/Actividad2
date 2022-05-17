@@ -16,6 +16,8 @@ public class Juego
         int EXITOS_jugador1=p1.getExitos();
         int EXITOS_jugador2=p2.getExitos();
         int EmPaTeS = 0;
+        int exitos;      // número de partidas ganadas
+        int winTotal;
         String opcion_JUGADOR1, opcion_JUGADOR2;
         
         // Bucle de juego
@@ -78,7 +80,8 @@ public class Juego
  *
  */
 class Jugador{
-   
+    int exitos;      // número de partidas ganadas
+    int winTotal;
     /**
      * Escoge piedra, papel o tijera al azar
      */
@@ -102,6 +105,5 @@ class Jugador{
         return(exitos);
     }
     
-    int exitos;      // número de partidas ganadas
-    int winTotal;
+
 }
