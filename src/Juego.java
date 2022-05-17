@@ -16,8 +16,6 @@ public class Juego
         int EXITOS_jugador1=p1.getExitos();
         int EXITOS_jugador2=p2.getExitos();
         int EmPaTeS = 0;
-        int exitos;      // número de partidas ganadas
-        int winTotal;
         String opcion_JUGADOR1;
         String opcion_JUGADOR2;
         
@@ -82,7 +80,7 @@ public class Juego
  */
 class Jugador{
     int exitos;      // número de partidas ganadas
-    int winTotal;
+
     /**
      * Escoge piedra, papel o tijera al azar
      */
