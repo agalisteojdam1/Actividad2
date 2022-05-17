@@ -12,10 +12,10 @@ public class Juego
         Jugador p1=new Jugador();
         Jugador p2=new Jugador();
         boolean fin_de_juego=false;  
-        Integer Rondasjugadas = 0;    // Número de rondas jugadas
-        Integer EXITOS_jugador1=p1.exitos;
-        Integer EXITOS_jugador2=p2.exitos;
-        Integer EmPaTeS = 0;
+        int Rondasjugadas = 0;    // Número de rondas jugadas
+        int EXITOS_jugador1=p1.exitos;
+        int EXITOS_jugador2=p2.exitos;
+        int EmPaTeS = 0;
         String opcion_JUGADOR1, opcion_JUGADOR2;
         
         // Bucle de juego
@@ -85,7 +85,7 @@ class Jugador{
     public String opcion_al_azar()
     {
         String opcion="";
-        Integer c = (int)(Math.random()*3);
+        int c = (int)(Math.random()*3);
         switch (c) {
             case 0 -> opcion = ("piedra");
             case 1 -> opcion = ("papel");
