@@ -25,9 +25,8 @@ public class Juego
             System.out.println("***** Ronda: " + Rondasjugadas+" *********************\n");
             System.out.println("Numero de empates: "+ EmPaTeS + "\n");
             opcion_JUGADOR1=p1.opcion_al_azar();
-            System.out.println("Jugador 1: " + opcion_JUGADOR1+"\t Jugador 1 - Partidas ganadas: " + EXITOS_jugador1);
             opcion_JUGADOR2 = p2.opcion_al_azar();
-            System.out.println("Jugador 2: " + opcion_JUGADOR2+"\t Jugador 2 - Partidas ganadas: " + EXITOS_jugador2);
+
             
             if((opcion_JUGADOR1.equals("piedra"))&&(opcion_JUGADOR2.equals("papel")))
             {
@@ -70,6 +69,8 @@ public class Juego
                 System.out.println("\n\t\t\t Empate \n");
             }
             Rondasjugadas++;
+            System.out.println("Jugador 1: " + opcion_JUGADOR1+"\t Jugador 1 - Partidas ganadas: " + EXITOS_jugador1);
+            System.out.println("Jugador 2: " + opcion_JUGADOR2+"\t Jugador 2 - Partidas ganadas: " + EXITOS_jugador2);
             if((EXITOS_jugador1>=3)||(EXITOS_jugador2>=3))
             {
             	fin_de_juego=true;
